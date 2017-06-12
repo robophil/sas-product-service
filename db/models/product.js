@@ -44,17 +44,17 @@ module.exports = Waterline.Collection.extend(Object.assign({
 
         //model
         store: {
-            model: 'store'
+            type: 'string'
         },
 
         //model
         category: {
-            model: 'category'
+            type: 'string'
         },
 
         //model
         subcategory: {
-            model: 'subcategory'
+            type: 'string'
         }
     }
 }, config))
