@@ -1,0 +1,21 @@
+{
+  "name": "sas-product-service",
+  "version": "0.0.1",
+  "description": "micro-service for managing products",
+  "main": "index.js",
+  "dependencies": {
+    "cote": "^0.13.2",
+    "waterline": "^0.11.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "microservice",
+    "cote",
+    "micro-service"
+  ],
+  "author": "Balogun Oghenerobo Philip <oghenerobo@gmail.com>",
+  "license": "MIT"
+}
