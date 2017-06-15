@@ -42,6 +42,10 @@ module.exports = Waterline.Collection.extend(Object.assign({
             required: true
         },
 
+        version: {
+            type: 'string'
+        },
+
         //model
         store: {
             type: 'string'
