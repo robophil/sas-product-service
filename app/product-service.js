@@ -12,7 +12,7 @@ const productResponder = new cote.Responder({
  */
 productResponder.on('product.create', (req) => {
     switch (req.model) {
-        case "product": return Store.create(req.body)
+        case "product": return Product.create(req.body)
 
         default: return null
     }
@@ -24,7 +24,7 @@ productResponder.on('product.create', (req) => {
  */
 productResponder.on('product.update', (req) => {
     switch (req.model) {
-        case "product": return Store.update(req.query, req.body)
+        case "product": return Product.update(req.query, req.body)
 
         default: return null
     }
@@ -36,7 +36,7 @@ productResponder.on('product.update', (req) => {
  */
 productResponder.on('product.get', (req) => {
     switch (req.model) {
-        case "product": return Store.get(req.query)
+        case "product": return Product.get(req.query)
 
         default: return null
     }
@@ -48,7 +48,7 @@ productResponder.on('product.get', (req) => {
  */
 productResponder.on('product.delete', (req) => {
     switch (req.model) {
-        case "product": return Store.delete(req.query)
+        case "product": return Product.delete(req.query)
 
         default: return null
     }
