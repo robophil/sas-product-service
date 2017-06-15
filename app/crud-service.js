@@ -1,7 +1,7 @@
 const cote = require('cote')
 
 const productResponder = new cote.Responder({
-    name: 'SAS-PRODUCT-SERVICE: product-responder ',
+    name: 'SAS-PRODUCT-SERVICE: crud-responder ',
     namespace: '',
     respondsTo: ['product.create', 'product.update', 'product.get', 'product.delete']
 })
