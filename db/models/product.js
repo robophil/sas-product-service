@@ -2,7 +2,7 @@ const Waterline = require('waterline')
 const config = require('../config')
 
 // Define your collection (aka model) 
-module.exports = Waterline.Collection.extend(Object.assign({
+module.exports = Waterline.Collection.extend(Object.assign(config, {
 
     tableName: 'product',
 
@@ -61,4 +61,4 @@ module.exports = Waterline.Collection.extend(Object.assign({
             type: 'string'
         }
     }
-}, config))
+}))
